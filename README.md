@@ -130,7 +130,9 @@ tar -xzf docsets\C-man-zh.docset.tgz  -C $dst
 | `Ctrl+Shift+H` | 用当前语言、不带关键词搜 |
 | `Alt+H` | 输入自定义关键词 |
 
-扩展的 keybinding 优先级高于 VS Code 内置的 `Ctrl+H`（查找替换），所以不会被抢走。
+> ⚠️ VS Code 内置的 `Ctrl+H` 是「查找替换」。扩展键位和内置键位冲突时谁生效取决于 `when` 条件的
+> 匹配情况，**这一点本仓库没有实测过**。如果按下 `Ctrl+H` 弹出的是查找替换而不是 Zeal，
+> 改用 `Ctrl+Alt+H`（搜全部文档集），或在「键盘快捷方式」里给 `extension.dash.specific` 换一个键。
 
 ## 自己构建
 
