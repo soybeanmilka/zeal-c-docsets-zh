@@ -1,0 +1,20 @@
+# 构建产物与中间缓存（页面缓存、解压出的 docset、抓取的 markdown）
+build/
+work/
+pylibs/
+*.log
+
+# 菜鸟教程正文有版权，构建产物不入库
+build/C-zh-cn.docset/
+docsets/C-zh-cn.docset.tgz
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
